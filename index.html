@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 90vh;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 3%;
+            border: 1px solid black;
+            border-radius: 15%;
+            background-color: aquamarine;
+            width: 10%;
+        }
+
+        .check{
+            display: flex;
+            flex-direction: row;
+        }
+
+    </style>
+</head>
+<body>
+        <h1>Formulário</h1>
+        <form action="https://google.com">
+            <!--action define o destino dos dados do formulario-->
+
+            <label for="key">Nome</label>
+            <input id="key" type="text" name="key">
+
+            <label for="email">Email</label>
+            <input id="email" type="text" name="email">
+
+            <label for="pass">Senha</label>
+            <input id="pass" type="password">
+
+            <label for="pass">Confirmação de Senha</label>
+            <input id="pass" type="password">
+
+            <div>
+                <input type="checkbox" id="termos" name="termos" />
+                <label for="termos">Aceitar Termos</label>
+            </div>
+
+            <label for="estados">Estado:</label>
+            <select name="estados" id="estados">
+                <option value="Sc">Santa Catarina</option>
+                <option value="Ap">Amapá</option>
+                <option value="Rs">Rio Grande do Sul</option>
+                <option value="Am">Amazonas</option>
+                <option value="Ot">Outro</option>
+            </select>
+
+            <label>Gênero:</label>
+            <div>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="genero" id="masc" value="masc">
+            </div>
+            <div>
+            <label for="fem">Feminino</label>
+            <input type="radio" name="genero" id="fem" value="fem">
+            </div>
+            <div>
+            <label for="Outro">Outro</label>
+            <input type="radio" name="genero" id="outro" value="outro">
+            </div>
+
+            <input type="submit">
+
+
+        </form>
+</body>
+</html>
